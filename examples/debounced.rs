@@ -1,6 +1,6 @@
-use std::{path::Path, time::Duration};
+use std::{io::Write, path::Path, time::Duration};
 
-use notify::{RecursiveMode};
+use notify::RecursiveMode;
 use notify_debouncer_mini::new_debouncer;
 
 /// Example f
@@ -28,7 +28,7 @@ fn main() {
     let (tx, rx) = std::sync::mpsc::channel();
 
     // No specific tickrate, max debounce time 2 seconds
-    let mut debouncer = new_debouncer(Duration::from_secs(2), tx).unwrap();
+    let mut debouncer = new_debouncer(Duration::from_secs(1), tx).unwrap();
 
     debouncer
         .watcher()
