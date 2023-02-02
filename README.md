@@ -13,13 +13,12 @@ _Cross-platform filesystem notification library for Rust._
 [alert-after]!)
 
 - [API Documentation][docs]
-- [Debouncer Documentation][debouncer]
+- [Debouncer API Documentation][debouncer]
 - [Examples][examples]
 - [Crate page][crate]
 - [Changelog][changelog]
 - [Upgrading from v4](UPGRADING_V4_TO_V5.md)
 - Earliest supported Rust version: **1.56**
-- **incomplete [Guides and in-depth docs][wiki]**
 
 As used by: [alacritty], [cargo watch], [cobalt], [docket], [mdBook], [pax],
 [rdiff], [rust-analyzer], [timetrack], [watchexec], [xi-editor], [watchfiles],
@@ -62,7 +61,7 @@ Originally created by [Félix Saparelli] and awesome [contributors].
 
 [Chokidar]: https://github.com/paulmillr/chokidar
 [FileSystemEventSecurity]: https://developer.apple.com/library/mac/documentation/Darwin/Conceptual/FSEvents_ProgGuide/FileSystemEventSecurity/FileSystemEventSecurity.html
-[debouncer]: https://github.com/notify-rs/notify/tree/main/notify-debouncer-mini
+[debouncer]: https://docs.rs/notify-debouncer-mini
 [Félix Saparelli]: https://passcod.name
 [alacritty]: https://github.com/jwilm/alacritty
 [alert-after]: https://github.com/frewsxcv/alert-after

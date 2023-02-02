@@ -18,7 +18,7 @@ fn main() {
     // setup debouncer
     let (tx, rx) = std::sync::mpsc::channel();
     // select backend via fish operator, here PollWatcher backend
-    let mut debouncer = new_debouncer_opt::<_,notify::PollWatcher>(Duration::from_secs(2), None, tx, Config::default()).unwrap();
+    let mut debouncer = new_debouncer_opt::<_,notify::PollWatcher>(Duration::from_secs(2), tx, Config::default()).unwrap();
 
     debouncer
         .watcher()

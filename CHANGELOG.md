@@ -2,6 +2,14 @@
 
 v4 commits split out to branch `v4_maintenance` starting with `4.0.16`
 
+## debouncer-mini 0.3.0 (2023-01-28)
+
+- CHANGE: replace active polling with passive debounce loop [#467]
+
+**Breaking** change that removes the `tick_rate` option and changes the debounce event from `Result<Vec<DebouncedEvent>, Vec<Error>>` to `Result<Vec<DebouncedEvent>, Error>`, making errors immediate. See debouncer docs for an example.
+
+[#467]: https://github.com/notify-rs/notify/pull/467
+
 ## notify 5.1.0 (2023-01-15)
 
 - CHANGE: switch from winapi to windows-sys [#457]
